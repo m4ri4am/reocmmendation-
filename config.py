@@ -8,12 +8,12 @@ class Config:
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'ay habal'
-    SQLALCHEMY_DATABASE_URI = 'postgresql:///graduation'
+    SQLALCHEMY_DATABASE_URI = 'postgresql:///database_name'
 
 
 class ProductionConfig(Config):
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql://magda:password@localhost/graduation'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://user:password@localhost/database_name'
 
 
 class StagingConfig(Config):
